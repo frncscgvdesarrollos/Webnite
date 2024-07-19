@@ -1,5 +1,6 @@
 'use client'
 import { useState } from 'react';
+import Image from 'next/image';
 
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +14,8 @@ export default function Header() {
             <div className="container mx-auto flex items-center justify-between">
                 {/* Logo y título */}
                 <div className="flex items-center gap-4">
-                    <h1 className="text-5xl px-8 lg:text-4xl text-white font-bold tracking-wider">Webnite.</h1>
+                    <Image src="/logoWebnite.png" width={60} height={60} alt="Logo" className='ml-8' />
+                    <h1 className="text-5xl  lg:text-4xl text-white font-bold tracking-wider">Webnite.</h1>
                     {/* <h2 className="text-xl lg:text-2xl text-white">Fullstack website factory</h2> */}
                 </div>
 
