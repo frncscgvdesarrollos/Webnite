@@ -18,7 +18,7 @@ export default function Header() {
                     <h1 className="text-5xl  lg:text-4xl text-white font-bold tracking-wider">Webnite.</h1>
                     {/* <h2 className="text-xl lg:text-2xl text-white">Fullstack website factory</h2> */}
                 </div>
-                <nav className=" lg:flex items-center space-x-2 lg:space-x-4 borde-titulo2 bg-blue-400 p-4 my-10 rounded-lg bg-opacity-70">
+                <nav className=" lg:flex items-center space-x-2 lg:space-x-4 borde-titulo2 bg-blue-400 p-4 my-10 rounded-lg bg-opacity-70 mr-14">
                     <a href="#" className="text-lg text-white hover:text-yellow-300">About</a>
                     <a href="#" className="text-lg text-white hover:text-yellow-300">How we work</a>
                     <a href="#" className="text-lg text-white hover:text-yellow-300">Contact</a>

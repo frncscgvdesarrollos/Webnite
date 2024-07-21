@@ -2,6 +2,7 @@
 import Hero from "./components/Hero";
 import About from "./components/About";
 import HowWeWork from "./components/How";
+// import Contact from "./components/Contact";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <Hero />
       <About />
       <HowWeWork />
+      {/* <Contact /> */}
     </main>
   );
 }

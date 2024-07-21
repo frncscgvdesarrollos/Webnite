@@ -16,17 +16,29 @@ h1 {
   color: gold !important;
   z-index: 999 !important;
 }	
-.howh2{
+.howh2 {
   text-shadow: 2px 2px 4px rgba(12, 16, 39, 0.818);
   position: absolute;
   margin-left: 60% !important;
   margin: 61px 0px 0px 80px;
   color: gold !important;
-  z-index: 999 !important;
+  z-index: 1000 !important;
 }	
+#contact {
+  text-shadow: 2px 2px 4px rgba(12, 16, 39, 0.818);
+  font-size: 20px;
+  position: absolute;
+  /* margin-left: 60% !important; */
+  /* margin: 61px 0px 0px 80px; */
+  color: gold !important;
+  z-index: 1000 !important;
+}
 
 body{
   overflow-x: hidden;
+}
+.gradient{
+  background: radial-gradient(circle at 10%, rgba(32, 41, 203, 0.868), rgba(99, 117, 167, 0.691));
 }
 .about-container{	
   position: absolute !important;
@@ -37,17 +49,13 @@ body{
   position: absolute !important;
   top:2000px;
   width: 100%;
-  /* background-image: url("/reunion.gif") ;
-  background-repeat: no-repeat;
-  background-blend-mode:overlay;
-   background-position: center;
-  background-size: 100% 100%;
-  background-position-x: 670px;
-  background-position-y: 60px;*/
 }
-/* .header-container{
-  
-} */
+.contact-container{	
+  position: absolute !important;
+  top:2800px;
+  background: #307ace;
+  width: 100%;
+}
 .header-container{
   position: absolute;
   z-index: 9999;
@@ -57,10 +65,8 @@ body{
   width: 100%;
 }
 .imagen-about{
-
-  /* transform: rotate3d(0, 1, 0, 0deg); */
   z-index: 999 !important;
-  box-shadow: -20px 50px 1000px rgba(255, 217, 0, 0.11);
+  box-shadow: -40px 70px 1000px rgba(255, 217, 0, 0.62);
 }
 .perspective-container{
   position: absolute;
@@ -68,8 +74,13 @@ body{
   z-index: 999;
   transform-style: preserve-3d;
 }
+.perspective-container2{
+  perspective: 1000px;
+  z-index: 999;
+  transform-style: preserve-3d;
+}
 .element-rotate{
-  transform: rotate3d(0, 1, 0, 20deg);
+  transform: rotate3d(0, 1, 0, 30deg);
 }
 .element-rotate2{
   transform: rotate3d(0, 1, 0, -20deg);
@@ -128,4 +139,11 @@ body{
 
 .link-container:hover .info {
   display: block;
+}
+
+.shadowVision {
+  box-shadow: -10px 10px 10px rgba(50, 139, 241, 0.818);
+}
+.shadowVision2 {
+  box-shadow: 0px 10px 10px rgba(126, 180, 243, 0.818);
 }
