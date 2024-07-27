@@ -11,9 +11,9 @@ export default function Header() {
 
     return (
         <header className="bg-blue-500  md:p-10 lg:py-2 bg-blue-400 bg-opacity-90 header-container">
-            <div className="container w-[400px] lg:w-full mx-auto flex items-center justify-between -top-16 md:top-0 lg:top-0 relative">
+            <div className="container w-[400px] lg:w-full mx-auto flex my-auto  -top-16 md:top-0 lg:top-0 relative">
                 {/* Logo y título */}
-                <div className="flex items-start lg: items-center gap-4 ">
+                <div className="flex items-start lg: items-center gap-2 ">
                     <a href="/"><Image src="/logoWebnite.png" width={200} height={200} alt="Logo" className=' md:w-[100px] md:h-[100px] lg:w-[200] lg:h-[200]' /></a>
                     <h1 className="text-2xl lg:text-5xl  lg:text-4xl text-white font-bold tracking-wider  lg:ml-0 text-yellow-500 hover:text-yellow-400">Webnite.</h1>
                     {/* <h2 className="text-xl lg:text-2xl text-white">Fullstack website factory</h2> */}
@@ -31,7 +31,7 @@ export default function Header() {
                     </div>
                 </nav>
                 </div>
-                <div className="lg:hidden text-white items-center text-xl justify-center flex bg-blue-500 p-2 rounded-lg border-l-2 border-b-2 border-white relative -translate-x-10 z-[999]">
+                <div className="h-[40px] top-1 my-auto lg:hidden text-white items-center text-xl justify-center flex bg-blue-500 p-2 rounded-lg border-l-2 border-b-2 border-white relative -translate-x-10 z-[999]">
                     <button onClick={toggleMenu} className="text-gray-200 focus:outline-none ">
                         <svg className="h-4 w-4 lg:h-6 lg:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             {isOpen ? (
