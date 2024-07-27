@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function HowWeWork () {
     return (
         <div className="h-fit bg-blue-900 how-container flex flex-col lg:-top-28">
-            <h1 className="howh2 ml-auto mr-[10%] text-yellow-500 relative text-4xl   md:text-4xl md:text-6xl font-bold hover:text-yellow-200 " id="how">How we work.</h1>
+            <h1 className="howh2 ml-auto mr-[10%] text-yellow-500 relative text-4xl md:text-4xl md:text-6xl font-bold hover:text-yellow-200 " id="how">How we work.</h1>
             {/* <span classname="absolute z-[999] text-3xl text-blue-500 top-20"> aaaa </span> */}
 
             <div className="text-center text-yellow-500">
@@ -24,7 +24,7 @@ export default function HowWeWork () {
             <div className="text-center text-white mt-60 animationWeContainer">
                 <h3 className="text-white animationWe relative transition-all duration-2000 text-3xl md:text-6xl font-bold z-[999] ">We are ready to help you</h3>
                 <h3 className="text-white animationWe relative transition-all duration-2000 text-2xl md:text-6xl font-bold z-[999]">with your project.</h3>
-                <h4 className="text-white animationWe  relative transition-all duration-2000 text-xl md:text-3xl font-bold z-[999]">Let's get started.</h4>
+                <h4 className="text-white animationWe  relative transition-all duration-2000 text-xl md:text-3xl font-bold z-[999]">Lets get started.</h4>
             </div>
 
 
