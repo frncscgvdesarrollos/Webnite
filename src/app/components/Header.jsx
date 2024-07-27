@@ -10,13 +10,11 @@ export default function Header() {
     };
 
     return (
-        <header className="bg-blue-500 md:p-10 lg:py-2 bg-blue-400 bg-opacity-90 header-container">
+        <header className="bg-blue-500 md:p-10  lg:py-2 bg-blue-400 bg-opacity-90 header-container">
             <div className="container w-[400px] lg:w-full  m-auto flex my-auto lg:items-center lg:justify-around  -top-16 md:top-0 lg:top-0 relative">
-                {/* Logo y título */}
                 <div className="flex items-start lg: items-center gap-2 lg:gap-10  lg:gradient lg:rounded-lg lg:p-2 lg:-translate-x-[60%]">
                     <a href="/"><Image src="/logoWebnite.png" width={200} height={200} alt="Logo" className=' md:w-[100px] md:h-[100px] lg:w-[200] lg:h-[200]' /></a>
                     <h1 className="text-2xl lg:text-5xl  lg:text-4xl text-white font-bold tracking-wider  lg:ml-0 text-yellow-500 hover:text-yellow-400">Webnite.</h1>
-                    {/* <h2 className="text-xl lg:text-2xl text-white">Fullstack website factory</h2> */}
                 </div>
                 <div className='opacity-0 lg:opacity-100'>
                 <nav className="lg:flex items-center space-x-2 lg:space-x-4 borde-titulo2 bg-blue-400 p-4 my-10 rounded-lg mr-10 lg:translate-x-[60%]">

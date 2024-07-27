@@ -6,7 +6,7 @@ export default function Hero() {
           autoPlay
           loop
           muted
-          className="relative w-full h-fit md:h-[600px] lg:h-[700px] object-contain md:object-cover lg:object-cover top-3 left-0"
+          className="relative w-[500px] mx-auto h-fit md:h-[600px] lg:h-[700px] object-contain md:object-cover lg:object-cover top-3 left-0"
         />
         <div className="relative md:top-36 lg:top-5 flex flex-col bg-gray-900 md:bg-opacity-0 p-10 md:p-20 lg:p-0  rounded-lg h-fit">
           <div className="md:bg-blue-500 w-full text-center p-2 md:ml-[7%] md:w-[400px] lg:w-[600px] z-[999] -top-5 lg:-top-20 lg:z-index[990] relative rounded-lg ">
