@@ -104,7 +104,7 @@ export default function Contact() {
                         </div>
                         <p className="text-white text-3xl text-center">Thank you for contacting us!</p>
 {/* Suggested code may be subject to a license. Learn more: ~LicenseLog:2575688667. */}
-                        <p className="text-white text-2xl text-center">We will get back to you as soon as possible.</p>
+                        <p className="text-white text-2xl text-center">We a will get back to you as soon as possible.</p>
                         <button onClick={() => setMessageSent(false)} className="bg-blue-700 text-white font-bold py-2 px-6 rounded-lg hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-400">Close</button>
                     </div>
                 </div>
