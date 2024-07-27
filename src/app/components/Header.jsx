@@ -11,7 +11,7 @@ export default function Header() {
 
     return (
         <header className="bg-blue-500  md:p-10 lg:py-2 bg-blue-400 bg-opacity-90 header-container">
-            <div className="container mx-auto flex items-center justify-between -top-16 md:top-0 lg:top-0 relative">
+            <div className="container w-[400px] lg:w-full mx-auto flex items-center justify-between -top-16 md:top-0 lg:top-0 relative">
                 {/* Logo y título */}
                 <div className="flex items-start lg: items-center gap-4 ">
                     <a href="/"><Image src="/logoWebnite.png" width={200} height={200} alt="Logo" className='ml-8 md:w-[100px] md:h-[100px] lg:w-[200] lg:h-[200]' /></a>
@@ -31,8 +31,8 @@ export default function Header() {
                     </div>
                 </nav>
                 </div>
-                <div className="lg:hidden text-white items-center text-xl justify-center flex bg-blue-500 p-2 rounded-lg border-l-2 border-b-2 border-white mr-20 z-[999]">
-                    <button onClick={toggleMenu} className="text-gray-200 focus:outline-none">
+                <div className="lg:hidden text-white items-center text-xl justify-center flex bg-blue-500 p-2 rounded-lg border-l-2 border-b-2 border-white relative -translate-x-10 z-[999]">
+                    <button onClick={toggleMenu} className="text-gray-200 focus:outline-none ">
                         <svg className="h-4 w-4 lg:h-6 lg:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             {isOpen ? (
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
