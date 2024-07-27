@@ -158,6 +158,20 @@ body{
 }
 
 @media screen and (max-width: 768px) {
+    body{
+      max-width: 600px !important;
+      overflow-x: hidden;
+    }
+
+    .header-container{
+    position: absolute;
+    z-index: 9999;
+    top: 0px !important;
+    left: 0;
+    height: 10px;
+    width: 500px !important;
+  }
+	
   .abouth2{
     top: 10px;
   }
