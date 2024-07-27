@@ -38,7 +38,7 @@ export default function Contact() {
 
     return (
         <div className="h-[145vh] md:h-[900px] bg-blue-500 contact-container p-10">
-            <Image src='/humo.gif' alt="Humo" width={300} height={300} className="w-[300px] h-[300px] absolute top-0 lg:ml-40" />
+            <Image src='/humo.gif' alt="Humo" width={300} height={300} className="w-[300px] h-[300px] absolute top-0 lg:ml-40" unoptimized />
             <h3 className="text-6xl" id="contact">Contact.</h3>
             <div className='flex flex-col lg:items-center lg:justify-center md:flex-row gap-[15%] mt-10 mx-2 md:p-10'>
                 <form
@@ -84,10 +84,10 @@ export default function Contact() {
                 </form>
                 <section className="w-[350px] lg:w-[500px] -top-5 border-b-2 border-white shadow-yourdear relative rotate-6 border-l-2 flex flex-col top-52 relative h-fit bg-blue-600 rounded-lg w-full md:w-2/5 p-6 space-y-4 -mt-36">
                     <h3 className="text-3xl text-white font-semibold relative -mt-10">Message Info</h3>
-                    <Image src='/humo.gif' alt="Humo" width={300} height={300} className="w-[300px] h-[300px] absolute -top-4 ml-28 z-[900]" />
+                    <Image src='/humo.gif' alt="Humo" width={300} height={300} className="w-[300px] h-[300px] absolute -top-4 ml-28 z-[900]" unoptimized />
                     <p className="text-white text-lg font-semibold z-[910]">Email: 6hY9h@example.com</p>
                     <p className="text-white text-lg z-[920]">
-                        Please provide detailed information in your message, including any specific questions or concerns you may have. 
+                        Please provide detailed information in your message, including any specific questions or concerns you may have.
                         After submitting your message, you can expect a response from our team within 24-48 hours. Thank you for reaching out to us.
                     </p>
                     <Image src="/mensaje.jpeg" width={100} height={100} alt="Contact" className="w-full h-fit rounded-lg -rotate-12 border-b-2 border-l-2 border-white z-[930]" />
@@ -106,7 +106,7 @@ export default function Contact() {
                         <button onClick={() => setMessageSent(false)} className="bg-blue-700 text-white font-bold py-2 px-6 rounded-lg hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-400">Close</button>
                     </div>
                 </div>
-            : null}
+                : null}
         </div>
     );
 }
