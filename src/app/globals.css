@@ -110,6 +110,7 @@ body{
   }
   how
 .about-container {
+  height: max-content !important;
   position: relative;
   top: 500px !important;
   z-index: 1200;
@@ -168,7 +169,7 @@ body{
     margin: 30px 180px 0px 0px;
   }
   .about-container {
-    top: -135px;
+    top: -80px;
   }
   .how-container {
     top: -50px;

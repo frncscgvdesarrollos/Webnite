@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function About(){
     return(
-        <div className="bg-blue-700 about-container mx-auto h-[190vh] md:h-[130vh] w-full">
+        <div className="bg-blue-700 about-container mx-auto  w-full">
             <h2 className="abouth2 text-6xl md:text-4xl lg:text-6xl font-bold text-white hover:text-yellow-200 text-yellow-500 ml-[20px] md:ml-[7%] md:-my-5 " id="about">About.</h2>
             <Image src={"/MVV.jpeg"} alt="values" width={300} height={300} className="rounded-lg border-t-2 ml-auto mr-5 md:mr-[10%] lg:mr-[20%] mt-32 md:mt-48 border-white border-r-2 w-[150px] h-[150px] md:w-[200px] md:h-[200px] lg:w-[350px] lg:h-[350px] rotate-12 relative -top-20 imagen-about" />
             <div className="text-white py-16 px-6 mt-28 lg:ml-28 p-20 flex flex-col gradient rounded-lg p-10 m-10 ">
