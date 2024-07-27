@@ -1,8 +1,6 @@
 'use client';
 import { useState, useEffect } from 'react';
-import { messageSender } from '../firebase';
 import Image from 'next/image';
-import { ImageError } from 'next/dist/server/image-optimizer';
 
 export default function Contact() {
     const [messageSent, setMessageSent] = useState(false);
@@ -20,16 +18,25 @@ export default function Contact() {
         }));
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        messageSender(state)
-            .then(() => {
-                setMessageSent(true);
-            })
-            .catch((error) => {
-                console.error('Error sending message:', error);
-                alert('Failed to send message');
+        try {
+            const response = await fetch('/api/sendMessage', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(state),
             });
+            if (response.ok) {
+                setMessageSent(true);
+            } else {
+                throw new Error('Failed to send message');
+            }
+        } catch (error) {
+            console.error('Error sending message:', error);
+            alert('Failed to send message');
+        }
     };
 
     useEffect(() => {
@@ -92,7 +99,7 @@ export default function Contact() {
                         Please provide detailed information in your message, including any specific questions or concerns you may have. 
                         After submitting your message, you can expect a response from our team within 24-48 hours. Thank you for reaching out to us.
                     </p>
-                <Image src="/mensaje.jpeg" alt="Contact" className="w-full h-fit rounded-lg  -rotate-12 border-b-2 border-l-2 border-white z-[930]" />
+                <Image src="/mensaje.jpeg" alt="Contact" width={300} height={300} className="w-full h-fit rounded-lg  -rotate-12 border-b-2 border-l-2 border-white z-[930]" />
                 </section>
             </div>
 

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function About(){
     return(
-        <div className="bg-blue-700 about-container mx-auto h-[190vh] md:h-[130vh]">
+        <div className="bg-blue-700 about-container mx-auto h-[175vh] md:h-[130vh] w-full">
             <h2 className="abouth2 text-6xl md:text-4xl lg:text-6xl font-bold text-white hover:text-yellow-200 text-yellow-500 ml-[20px] md:ml-[7%] md:-my-5 " id="about">About.</h2>
             <Image src={"/MVV.jpeg"} alt="values" width={300} height={300} className="rounded-lg border-t-2 ml-auto mr-5 md:mr-[10%] lg:mr-[20%] mt-32 md:mt-48 border-white border-r-2 w-[150px] h-[150px] md:w-[200px] md:h-[200px] lg:w-[350px] lg:h-[350px] rotate-12 relative -top-20 imagen-about" />
             <div className="text-white py-16 px-6 mt-28 lg:ml-28 p-20 flex flex-col gradient rounded-lg p-10 m-10 ">
@@ -63,7 +63,7 @@ export default function About(){
                         <ul className="list-none list-inside value-container-perspective text-white text-justify mt-4 h-[500px] flex flex-col w-full text-base md:text-lg gap-6 mx-auto">
                             <div className="flex flex-col value-container justify-center items-center mx-auto gap-6 hover:gap-16 transition-all duration-1000">
                                 <li className="relative top-6 bg-gray-600 rounded-lg p-4 border-2 border-white rotate-[6deg] hover:rotate-[360deg] transition-all duration-1000"><strong>Innovation:</strong><br/> We strive to be at the forefront of technology, constantly seeking new ways to improve and offer creative and effective solutions.</li>
-                                <li className="relative -top-6 bg-gray-700 bg-opacity-50 text-center rounded-lg p-4 border-2 border-white hover:rounded-full hover:bg-opacity-100 hover:bg-yellow-500 hover:w-1/2  hover:-translate-y-1/4 hover:scale-110 transition-all duration-1000 -rotate-[6deg]"><strong>Quality:</strong><br/> We are committed to delivering products and services of the highest quality, ensuring total customer satisfaction.</li>
+                                <li className="relative -top-6 bg-gray-700 bg-opacity-50 text-center rounded-lg p-4 border-2 border-white hover:rounded-full hover:bg-opacity-100 hover:bg-yellow-500 md:hover:w-1/2  hover:-translate-y-1/4 md:hover:scale-110 transition-all duration-1000 -rotate-[6deg]"><strong>Quality:</strong><br/> We are committed to delivering products and services of the highest quality, ensuring total customer satisfaction.</li>
                                 <li className="relative -top-20 bg-gray-600 rounded-lg p-4 border-2 border-white rotate-[6deg] hover:rotate-0 hover:bg-opacity-0 transition-all duration-1000"><strong>Transparency:</strong><br/> We foster open and honest communication both internally and with our clients, building relationships of trust and respect.</li>
                                 <li className="relative -top-40 bg-gray-700 bg-opacity-50 rounded-lg p-4 border-2 border-white transition-all duration-1000 -rotate-[6deg] text-center colaboration"><strong>Collaboration:</strong><br/> We believe in the power of teamwork and synergy, working closely with our clients and within our organization to achieve the best results.</li>
                             </div>
