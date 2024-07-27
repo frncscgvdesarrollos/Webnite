@@ -1,6 +1,6 @@
 import About from "./components/About";
 import Hero from "./components/Hero";
-import HowWeWork from "./components/How";
+import HowWeWork from "./components/HowWeWork";
 import Contact from "./components/Contact";
 
 export default function Home() {
