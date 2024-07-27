@@ -37,7 +37,7 @@ export default function Contact() {
     }, [state]);
 
     return (
-        <div className="h-[190vh] md:h-[800px] bg-blue-500 contact-container p-10">
+        <div className="h-[180vh] md:h-[800px] bg-blue-500 contact-container p-10">
             <Image src='/humo.gif' alt="Humo" width={300} height={300} className="w-[300px] h-[300px] absolute top-0" />
             <h3 className="text-6xl" id="contact">Contact.</h3>
             <div className='flex flex-col md:flex-row gap-[15%] mt-10 mx-2 md:p-10'>
@@ -82,7 +82,7 @@ export default function Contact() {
                         Send
                     </button>
                 </form>
-                <section className="-top-5 border-b-2 border-white shadow-yourdear relative rotate-6 border-l-2 flex flex-col top-52 relative h-fit bg-blue-600 rounded-lg w-full md:w-2/5 p-6 space-y-4 -mt-36">
+                <section className="w-[350px] -top-5 border-b-2 border-white shadow-yourdear relative rotate-6 border-l-2 flex flex-col top-52 relative h-fit bg-blue-600 rounded-lg w-full md:w-2/5 p-6 space-y-4 -mt-36">
                     <h3 className="text-3xl text-white font-semibold relative -mt-10">Contact Info</h3>
                     <Image src='/humo.gif' alt="Humo" width={300} height={300} className="w-[300px] h-[300px] absolute -top-4 ml-28 z-[900]" />
                     <p className="text-white text-lg font-semibold z-[910]">Email: 6hY9h@example.com</p>
