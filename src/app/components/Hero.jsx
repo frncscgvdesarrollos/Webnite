@@ -1,52 +1,30 @@
-export default function Hero(){
-    
-    return(
-        <div>
-            <video 
-                src="./VHero.mp4"
-                autoPlay
-                loop
-                muted
-                className="-top-16 relative"
-            />
-            <div className="container-hero">
-                {/* <h1 className="text-white text-6xl ml-10">Webnite</h1> */}
-                <div className="website-factory text-white absolute top-4 hover:-top-56 transition-all duration-9000 text-center 
-                text-5xl ml-10 mt-16 bg-blue-700 w-2/5 h-[500px] p-2 rounded-lg factory-container">
-                    <h2 className="tracking-wider bg-blue-900 bg-opacity-90 font-bold  rounded-lg p-4 text-xl lg:text-4xl ">Websites factory</h2>
-                    <ul className="text-left text-white text-lg bg-cyan-900 rounded-lg p-4 bg-opacity-90 mt-10">
-                        <li>
-                            Rapid and Frequent Delivery
-                        </li>
-                        <li>
-                            Transparency
-                        </li>
-                        <li>
-                            Continuous Improvement
-                        </li>
-                        <li>
-                            Risk Reduction
-                        </li>
-                        <li>
-                            Increased Customer Satisfaction
-                        </li>
-                    </ul>
-                    {/* <span className="text-left text-white text-base bg-gray-900 rounded-lg p-4 bg-opacity-60">Stay competitive, strengthen your business or begin a new enterprise.</span> */}
-                </div>
-                <div className="bg-gray-900 top-44 relative w-screen h-[450px] flex justify-evenly items-start">
-                    <span className="text-white text-2xl font-bold text-center relative top-12">
-                        Innovation and technology at the service of your projects.
-                    </span>
-                    <button className="bg-blue-500 text-white px-4 py-2 rounded-lg mt-10 w-40 h-10">Contact now</button>
-                    
-                </div>
-                {/* <hr className="border-1 border-white"/> */}
-                <span className="text-white text-3xl -top-8 text-center relative block underline">
-                    Tailored software development that aligns with your goals and adapts to your needs.
-                </span>
-
-            </div>
+export default function Hero() {
+    return (
+      <div className="flex flex-col h-screen bg-gray-900 bg-opacity-90 text-white ">
+        <video 
+          src="./VHero.mp4"
+          autoPlay
+          loop
+          muted
+          className="relative w-full h-fit md:h-[600px] lg:h-[700px] object-contain md:object-cover lg:object-cover top-3 left-0"
+        />
+        <div className="relative md:top-36 lg:top-5 flex flex-col bg-gray-900 md:bg-opacity-0 p-10 md:p-20 lg:p-0  rounded-lg h-fit">
+          <div className="md:bg-blue-500 w-full text-center p-2 md:ml-[7%] md:w-[400px] lg:w-[600px] z-[999] -top-5 lg:-top-20 lg:z-index[990] relative rounded-lg ">
+            <h2 className="text-yellow-500 font-semibold text-4xl md:text-4xl lg:text-6xl md:bg-blue-900 rounded-lg p-2 z-[985]">Websites factory</h2>
+          </div>
+          <div className="bg-gray-900 flex flex-col h-fit">
+          <div className="flex flex-col md:flex-row lg:flex-row  w-full p-10 bg-gray-900 -top-4 lg:-top-24 relative lg:z-[999]" >
+            <span className="text-left font-semibold text-xl md:text-3xl lg:text-4xl my-5 md:ml-[7%] lg:ml-[5%] lg:my-10"  >
+              Innovation and technology at the service of your projects.
+            </span>
+            <button className="bg-blue-500 md:text-3xl lg:text-4xl text-white p-2 rounded-lg w-2/5 md:w-fit lg:w-fit ml-auto h-fit my-14 md:my-auto" >Contact now</button>
+          </div>
+          <span className="text-2xl md:text-4xl p-10  text-center bg-blue-500 md:bg-gray-900 md:my-20 relative md:-top-28 rounded-lg z-[990] mb-10">
+            Tailored software development that aligns with your goals and adapts to your needs.
+          </span>
+          </div>
         </div>
-    )
-}
-
+      </div>
+    );
+  }
+  

@@ -1,6 +1,7 @@
 
 import "./globals.css";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 
 
@@ -12,9 +13,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="bg-[#000]">
+      <body className="h-[100%] mx-auto bg-gray-900" >
         <Header/>
         {children}
+        <Footer />
       </body>
     </html>
   );
