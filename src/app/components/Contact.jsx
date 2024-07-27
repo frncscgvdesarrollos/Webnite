@@ -1,6 +1,8 @@
 'use client';
 import { useState, useEffect } from 'react';
 import { messageSender } from '../firebase';
+import Image from 'next/image';
+import { ImageError } from 'next/dist/server/image-optimizer';
 
 export default function Contact() {
     const [messageSent, setMessageSent] = useState(false);
@@ -38,7 +40,7 @@ export default function Contact() {
 
     return (
         <div className="h-[140vh] md:h-[800px] bg-blue-500 contact-container p-10">
-            <img src='/humo.gif' alt="Humo" className="w-[300px] h-[300px]  absolute top-0" />
+            <Image src='/humo.gif' alt="Humo" className="w-[300px] h-[300px]  absolute top-0" />
             <h3 className="text-6xl" id="contact">Contact Form</h3>
             <div className='flex flex-col md:flex-row gap-[15%]  mt-10 mx-2 md:p-10  '>
                 <form
@@ -84,13 +86,13 @@ export default function Contact() {
                 </form>
                 <section className="-top-5 border-b-2 border-white shadow-yourdear relative  rotate-6 border-l-2 flex flex-col top-52 relative h-fit bg-blue-600 rounded-lg w-full md:w-2/5 p-6 space-y-4 -mt-36">
                     <h3 className="text-3xl text-white  font-semibold relative -mt-10">Contact Info</h3>
-                    <img src='/humo.gif' alt="Humo" className="w-[300px] h-[300px]  absolute -top-4 ml-28   z-[900]" />
+                    <Image src='/humo.gif' alt="Humo" className="w-[300px] h-[300px]  absolute -top-4 ml-28   z-[900]" />
                     <p className="text-white text-lg font-semibold z-[910]">Email: 6hY9h@example.com</p>
                     <p className="text-white text-lg z-[920]">
                         Please provide detailed information in your message, including any specific questions or concerns you may have. 
                         After submitting your message, you can expect a response from our team within 24-48 hours. Thank you for reaching out to us.
                     </p>
-                <img src="/mensaje.jpeg" alt="Contact" className="w-full h-fit rounded-lg  -rotate-12 border-b-2 border-l-2 border-white z-[930]" />
+                <Image src="/mensaje.jpeg" alt="Contact" className="w-full h-fit rounded-lg  -rotate-12 border-b-2 border-l-2 border-white z-[930]" />
                 </section>
             </div>
 
