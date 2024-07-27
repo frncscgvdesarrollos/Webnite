@@ -29,7 +29,7 @@ export default function Header() {
                     </div>
                 </nav>
                 </div>
-                <div className="h-[40px] top-1 my-auto lg:hidden text-white items-center text-xl justify-center flex bg-blue-500 p-2 rounded-lg border-l-2 border-b-2 border-white relative  z-[999]">
+                <div className="h-[40px] top-1 my-auto lg:hidden text-white items-center text-xl justify-center flex bg-blue-500 p-2 rounded-lg border-l-2 border-b-2 border-white relative translate-x-10 z-[999]">
                     <button onClick={toggleMenu} className="text-gray-200 focus:outline-none ">
                         <svg className="h-4 w-4 lg:h-6 lg:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             {isOpen ? (
