@@ -14,8 +14,8 @@ export default function Header() {
             <div className="container w-[400px] lg:w-full mx-auto flex items-center justify-between -top-16 md:top-0 lg:top-0 relative">
                 {/* Logo y título */}
                 <div className="flex items-start lg: items-center gap-4 ">
-                    <a href="/"><Image src="/logoWebnite.png" width={200} height={200} alt="Logo" className='ml-8 md:w-[100px] md:h-[100px] lg:w-[200] lg:h-[200]' /></a>
-                    <h1 className="text-2xl lg:text-5xl  lg:text-4xl text-white font-bold tracking-wider ml-10 lg:ml-0 text-yellow-500 hover:text-yellow-400">Webnite.</h1>
+                    <a href="/"><Image src="/logoWebnite.png" width={200} height={200} alt="Logo" className=' md:w-[100px] md:h-[100px] lg:w-[200] lg:h-[200]' /></a>
+                    <h1 className="text-2xl lg:text-5xl  lg:text-4xl text-white font-bold tracking-wider  lg:ml-0 text-yellow-500 hover:text-yellow-400">Webnite.</h1>
                     {/* <h2 className="text-xl lg:text-2xl text-white">Fullstack website factory</h2> */}
                 </div>
                 <div className='opacity-0 lg:opacity-100'>
