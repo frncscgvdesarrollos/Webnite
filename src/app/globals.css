@@ -167,7 +167,7 @@ body{
   z-index: 6000 !important;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 850px) {
     body{
       max-width: auto !important;
       overflow-x: hidden;
