@@ -1,6 +1,8 @@
 'use client';
 import { useState, useEffect } from 'react';
+import { messageSender } from '../firebase';
 import Image from 'next/image';
+
 
 export default function Contact() {
     const [messageSent, setMessageSent] = useState(false);
@@ -18,25 +20,16 @@ export default function Contact() {
         }));
     };
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = (e) => {
         e.preventDefault();
-        try {
-            const response = await fetch('/api/sendMessage', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(state),
-            });
-            if (response.ok) {
+        messageSender(state)
+            .then(() => {
                 setMessageSent(true);
-            } else {
-                throw new Error('Failed to send message');
-            }
-        } catch (error) {
-            console.error('Error sending message:', error);
-            alert('Failed to send message');
-        }
+            })
+            .catch((error) => {
+                console.error('Error sending message:', error);
+                alert('Failed to send message');
+            });
     };
 
     useEffect(() => {
@@ -99,12 +92,12 @@ export default function Contact() {
                         Please provide detailed information in your message, including any specific questions or concerns you may have. 
                         After submitting your message, you can expect a response from our team within 24-48 hours. Thank you for reaching out to us.
                     </p>
-                <Image src="/mensaje.jpeg" alt="Contact" width={300} height={300} className="w-full h-fit rounded-lg  -rotate-12 border-b-2 border-l-2 border-white z-[930]" />
+                <Image src="/mensaje.jpeg" width={100} height={100} alt="Contact" className="w-full h-fit rounded-lg  -rotate-12 border-b-2 border-l-2 border-white z-[930]" />
                 </section>
             </div>
 
             {messageSent ?
-                <div className="fixed inset-0 flex items-center justify-center bg-blue-900 bg-opacity-50">
+                <div className="fixed inset-0 flex items-center justify-center bg-blue-900 md:bg-opacity-50">
                     <div className="bg-blue-600 rounded-3xl p-10 w-2/3 h-2/3 flex flex-col items-center justify-center space-y-4">
                         <div className="flex items-center space-x-4">
                             <Image  src="/logoWebnite.png" width={100} height={100} alt="Logo" />
