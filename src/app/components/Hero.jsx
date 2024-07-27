@@ -17,9 +17,9 @@ export default function Hero() {
             <span className="text-left font-semibold text-xl md:text-3xl lg:text-4xl my-5 md:ml-[7%] lg:ml-[5%] lg:my-10"  >
               Innovation and technology at the service of your projects.
             </span>
-            <button className="bg-blue-500 md:text-3xl lg:text-4xl text-white p-2 rounded-lg w-2/5 md:w-fit lg:w-fit ml-auto h-fit my-14 md:my-auto" >Contact now</button>
+            <button className="bg-blue-500 md:text-3xl lg:text-4xl lg:mr-36 text-white p-2 rounded-lg w-2/5 md:w-fit lg:w-fit ml-auto h-fit my-14 md:my-auto" >Contact now</button>
           </div>
-          <span className="text-2xl md:text-4xl p-10  text-center bg-blue-500 md:bg-gray-900 md:my-20 relative md:-top-28 rounded-lg z-[990] mb-10">
+          <span className="text-2xl md:text-4xl p-10  text-center bg-blue-500 md:bg-gray-900 md:my-20 relative md:-top-28 rounded-lg z-[990] mb-14">
             Tailored software development that aligns with your goals and adapts to your needs.
           </span>
           </div>

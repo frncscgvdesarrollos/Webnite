@@ -28,7 +28,7 @@ export default function HowWeWork () {
             </div>
 
 
-            <div className="grid grid-cols-6 md:grid-cols-5 mx-auto mt-20 md:-mt-20 lg:-mt-40 w-full  grid-how  z-[999] gap-2 bg-opacity-70 mx-auto gap-10 md:gap-20 md:p-20 lg:p-52">
+            <div className="grid grid-cols-6 p-10 md:grid-cols-5 mx-auto mt-20 md:-mt-20 lg:-mt-40 w-full  grid-how  z-[999] gap-2 bg-opacity-70 mx-auto gap-10 md:gap-20 md:p-20 lg:p-52">
             <div className="col-start-1 hover:col-end-3  row-start-4 -rotate-12 scale-150">
                 <Image src="/avion.jpeg" width={300} height={300} alt="a" className="h-[150px] w-[200px] relative -top-20 border-b-2 border-yellow-200 border-l-2 shadow-yourdear rounded-lg ml-20 opacity-0 lg:opacity-100  "/>
             </div>

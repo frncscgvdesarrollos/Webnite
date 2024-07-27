@@ -2,10 +2,10 @@ import Image from "next/image";
 
 export default function About(){
     return(
-        <div className="bg-blue-700 about-container mx-auto top-20 md:top-10  w-full">
-            <h2 className="abouth2 text-6xl md:text-4xl lg:text-6xl font-bold text-white hover:text-yellow-200 text-yellow-500 ml-[20px] md:ml-[7%] md:-my-5 " id="about">About.</h2>
-            <Image src={"/MVV.jpeg"} alt="values" width={300} height={300} className="rounded-lg border-t-2 ml-auto mr-20 md:mr-[10%] lg:mr-[20%] mt-32 md:mt-48 border-white border-r-2 w-[150px] h-[150px] md:w-[200px] md:h-[200px] lg:w-[350px] lg:h-[350px] rotate-12 relative -top-20 imagen-about" />
-            <div className="text-white py-16 px-6 mt-28 lg:ml-28 p-20 flex flex-col gradient rounded-lg p-10 m-10 ">
+        <div className="bg-blue-700 about-container mx-auto top-20 md:top-10 lg:h-[180vh]  w-full">
+            <h2 className="abouth2 text-6xl md:text-4xl lg:text-6xl mt-14 lg:-mt-[6%] absolute font-bold text-white hover:text-yellow-200 text-yellow-500 ml-[20px] md:ml-[10%] md:-my-5 " id="about">About.</h2>
+            <Image src={"/MVV.jpeg"} alt="values" width={300} height={300} className="rounded-lg  border-t-2  ml-auto mr-20 md:mr-[10%] lg:mr-[20%] mt-32 lg:mt-[25%] md:mt-48 border-white border-r-2 w-[150px] h-[150px] md:w-[200px] md:h-[200px] lg:w-[350px] lg:h-[350px] rotate-12 relative -top-20 imagen-about" />
+            <div className="text-white py-16 px-6 mt-28 about-main-container  lg:mt-36 lg:ml-28 md:ml-10 p-20 flex flex-col rounded-lg p-10 m-10 ">
                 <div className="flex gap-10 -mt-60 md:mt-20 relative -rotate-6 ">
                     <div className="mb-4 w-[500px] md:w-4/5  lg:w-[650px] lg:ml-[5%]  rounded-lg p-4 shadow-lg relative md:-top-[450px] md:w-4/5 lg:w-2/5 mx-auto md:ml-auto lg:ml-10 bg-blue-900 element-rotate pb-16 border-b-4 border-white shadowVision2">
                         <h3 className="text-3xl font-bold tracking-wide text-center">Mission</h3>
@@ -58,7 +58,7 @@ export default function About(){
                                       p-4 
                                       rounded-lg">Our vision is to be leaders in web development, recognized for our creativity, technical excellence, and client-centric approach. We aspire to create a digital world where all businesses, regardless of size, can access advanced web tools to enhance their online presence and achieve their business goals.</p>
                     </div>
-                    <div className="mb-4 relative lg:mr-[15%] lg:-rotate-6 md:-mt-[620px] md:h-fit  flex flex-col w-full md:w-3/5 lg:w-[550px] ml-auto bg-blue-700 border-t-2 rounded-lg p-4 mx-auto shadow-lg element-rotate2 border-l-2 border-white">
+                    <div className="mb-4 relative lg:mr-[15%] md:mr-[5%] lg:-rotate-6 md:-mt-[620px] md:h-fit  flex flex-col w-full md:w-3/5 lg:w-[550px] ml-auto bg-blue-700 border-t-2 rounded-lg p-4 mx-auto shadow-lg element-rotate2 border-l-2 border-white">
                         <h3 className="text-3xl font-bold mb-4 text-center">Values</h3>
                         <ul className="list-none list-inside value-container-perspective text-white text-justify mt-4 h-[500px] flex flex-col w-full text-base md:text-lg gap-6 mx-auto">
                             <div className="flex flex-col value-container justify-center items-center mx-auto gap-6 hover:gap-16 transition-all duration-1000">
