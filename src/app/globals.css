@@ -21,35 +21,45 @@ body {
   box-shadow: -10px 10px 10px rgba(50, 139, 241, 0.818);
 }
 
-.meeting-background {
-  background-image: url("/how1.gif") !important;
+.meeting-background,
+.desing-background,
+.development-background,
+.deployment-background {
   background-size: contain;
   background-repeat: no-repeat;
   background-position-y: 0%;
   background-position-x: 0%;
 }
+
+.meeting-background {
+  background-image: url("/how1.gif") !important;
+  /* background-size: contain; */
+  /* background-repeat: no-repeat; */
+  /* background-position-y: 0%; */
+  /* background-position-x: 0%; */
+}
 .desing-background {
   background-image: url("/how2.gif") !important;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position-y: 50px;
-  background-position-x: 200px;
+  /* background-size: contain; */
+  /* background-repeat: no-repeat; */
+  /* background-position-y: 50px;
+  background-position-x: 200px; */
 }
 
 .development-background {
   background-image: url("/how1.gif") !important;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position-y: 50px;
-  background-position-x: 200px;
+  /* background-size: contain; */
+  /* background-repeat: no-repeat; */
+  /* background-position-y: 50px;
+  background-position-x: 200px; */
 }
 
 .deployment-background {
   background-image: url("/how4.gif") !important;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position-y: 50px;
-  background-position-x: 200px;
+  /* background-size: contain;
+  background-repeat: no-repeat; */
+  /* background-position-y: 50px;
+  background-position-x: 200px; */
 }
 
 .how-container {

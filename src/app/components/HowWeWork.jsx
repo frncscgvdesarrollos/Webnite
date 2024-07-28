@@ -73,28 +73,28 @@ export default function HowWeWork() {
             </div>
 
             {/* Escalera de tarjetas */}
-            <div className="grid grid-cols-6 p-10 md:grid-cols-5 mt-20 md:-mt-20 lg:-mt-40 w-full  grid-how  z-[999] gap-2 bg-opacity-70 mx-auto gap-10 md:gap-20 md:p-20 lg:p-52">
+            <div className="grid grid-cols-6 p-10 md:grid-cols-5 mt-20 md:-mt-20 lg:-mt-40 w-full  grid-how  z-[999] gap-2 bg-opacity-70 mx-auto  md:gap-20 md:p-20 lg:p-52">
                 <div className="col-start-1 hover:col-end-3  row-start-4 -rotate-12 scale-150">
                     <Image src="/avion.jpeg" width={300} height={300} alt="a" className="h-[150px] w-[200px] relative -top-20 border-b-2 border-yellow-200 border-l-2 shadow-yourdear rounded-lg ml-20 opacity-0 lg:opacity-100  " />
                 </div>
 
-                <div className="col-start-1 rounded-lg  col-end-4 md:col-end-3 md:hover:col-end-3 transition-all duration-3000  hover:my-10 hover:col-end-5 shadow-yourdear col-span-2 row-start-1 bg-yellow-500 h-[200px] border-r-4 border-b-4 border-blue-100 hover:rotate-12 ">
-                    <div className="meeting-background">
-                        <h5 className=" text-white font-bold bg-blue-900 bg-opacity-90 text-3xl ml-0 hover:ml-12 transition-all duration-3000">Meeting</h5>
-                        <p className="text-white mt-2 px-10 text-base md:text-xl  my-auto  py-2 contente-box transition-all duration-3000 ">Unimos ideas y colaboramos para definir objetivos claros y estrategias efectivas en nuestras reuniones iniciales.</p>
+                <div className="col-start-1 rounded-lg col-end-4 md:col-end-3 md:hover:col-end-3 transition-all duration-[3000ms]  hover:my-10 hover:col-end-5 shadow-yourdear col-span-2 row-start-1 bg-yellow-500 h-[200px] border-r-4 border-b-4 border-blue-100 hover:rotate-12 ">
+                    <div className="meeting-background font-semibold">
+                        <h5 className=" text-white font-bold bg-blue-900 bg-opacity-90 text-3xl ml-0 hover:ml-12 transition-all duration-[3000ms]">Meeting</h5>
+                        <p className="text-white mt-2 px-10 text-base md:text-xl  my-auto  py-2 contente-box transition-all duration-[3000ms] ">Unimos ideas y colaboramos para definir objetivos claros y estrategias efectivas en nuestras reuniones iniciales.</p>
                     </div>
                 </div>
 
-                <div className="col-start-1 rounded-lg  col-end-5 transition-all duration-3000 md:col-end-4 hover:col-end-6 md:hover:col-end-4 md:hover:my-0  hover:my-10 md:col-start-2  shadow-yourdear col-span-2 row-start-2 bg-yellow-500 h-[200px] relative border-r-4 border-b-4 border-blue-100 hover:rotate-12">
-                    <div className="desing-background">
-                        <h5 className="text-white font-bold bg-blue-900 bg-opacity-90 text-3xl ml-0 hover:ml-12 transition-all duration-3000">Design</h5>
+                <div className="col-start-1 rounded-lg  col-end-5 transition-all duration-[3000ms] md:col-end-4 hover:col-end-6 md:hover:col-end-4 md:hover:my-0  hover:my-10 md:col-start-2  shadow-yourdear col-span-2 row-start-2 bg-yellow-500 h-[200px] relative border-r-4 border-b-4 border-blue-100 hover:rotate-12">
+                    <div className="desing-background font-semibold">
+                        <h5 className="text-white font-bold bg-blue-900 bg-opacity-90 text-3xl ml-0 hover:ml-12 transition-all duration-[3000ms]">Design</h5>
                         <p className="text-white mt-2 px-4 text-base md:text-xl my-auto py-4">Convertimos conceptos en realidad visual, creando diseños  innovadores y atractivos   que capturan la  esencia de   tu marca.</p>
                     </div>
                 </div>
 
-                <div className="col-start-1 rounded-lg md:col-end-5 col-end-6 transition-all duration-3000 md:hover:col-end-5 hover:col-end-7 md:col-start-3 shadow-yourdear shadow-yourdear col-span-2   row-start-3 bg-yellow-500 h-[200px] relative border-r-4 border-b-4 border-blue-100 hover:rotate-12">
-                    <div className="development-background">
-                        <h5 className="text-white font-bold bg-blue-900 bg-opacity-90 text-3xl ml-0 hover:ml-12 transition-all duration-3000">Development</h5>
+                <div className="col-start-1 rounded-lg md:col-end-5 col-end-6 transition-all duration-[3000ms] md:hover:col-end-5 hover:col-end-7 md:col-start-3 shadow-yourdear shadow-yourdear col-span-2 row-start-3 bg-yellow-500 h-[200px] relative border-r-4 border-b-4 border-blue-100 hover:rotate-12">
+                    <div className="development-background font-semibold">
+                        <h5 className="text-white font-bold bg-blue-900 bg-opacity-90 text-3xl ml-0 hover:ml-12 transition-all duration-[3000ms]">Development</h5>
                         <p className="text-white mt-2 px-4 text-base md:text-xl my-auto">Transformamos los diseños en soluciones funcionales y escalables, utilizando <br /> las últimas tecnologías.</p>
                         <br />
                         <br />
@@ -102,8 +102,8 @@ export default function HowWeWork() {
                 </div>
 
                 <div className="col-start-1 col-end-7 md:col-end-6 md:hover:col-end-6 hover:col-end-8 md:col-start-4 shadow-yourdear col-span-2 row-start-4 bg-yellow-500 rounded-lg h-[200px]  border-r-4 border-b-4 border-blue-100 hover:rotate-12 ">
-                    <div className="deployment-background">
-                        <h5 className="text-white font-bold bg-blue-900 bg-opacity-90 text-3xl ml-0 hover:ml-12 transition-all duration-3000">Deploy</h5>
+                    <div className="deployment-background font-semibold">
+                        <h5 className="text-white font-bold bg-blue-900 bg-opacity-90 text-3xl ml-0 hover:ml-12 transition-all duration-[3000ms]">Deploy</h5>
                         <p className="text-white mt-2 px-4 text-lg my-5 md:text-xl my-auto">Desplegamos soluciones de software a medida y manteniendo la seguridad de tu negocio.</p>
                     </div>
                 </div>
